@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>江南体育 · 杂志专题</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f1f2f6;
+      font-family: 'Segoe UI', 'PingFang SC', Roboto, 'Helvetica Neue', sans-serif;
+      color: #2d3436;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    .page-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 0 60px;
+    }
+
+    /* —— 横幅 hero —— */
+    .hero {
+      background: linear-gradient(145deg, #dfe6e9, #b2bec3);
+      border-radius: 24px;
+      padding: 60px 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      transition: box-shadow 0.2s;
+    }
+
+    .hero:hover {
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: #1e272e;
+      border-left: 6px solid #718093;
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 700px;
+      color: #3d3d3d;
+      margin-top: 10px;
+    }
+
+    .hero .sub {
+      font-size: 0.95rem;
+      color: #636e72;
+      margin-top: 20px;
+      border-top: 1px dashed #b2bec3;
+      padding-top: 18px;
+    }
+
+    /* —— 卡片通用 —— */
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.02);
+      border: 1px solid #e9ecef;
+      transition: box-shadow 0.15s;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+    }
+
+    .card h2 {
+      font-size: 1.7rem;
+      font-weight: 350;
+      letter-spacing: -0.2px;
+      color: #1e272e;
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #dfe6e9;
+    }
+
+    .card h3 {
+      font-weight: 500;
+      font-size: 1.15rem;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      color: #2d3436;
+    }
+
+    .card p {
+      margin-bottom: 12px;
+    }
+
+    .card a {
+      color: #2c3e50;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #b0bec5;
+      transition: text-decoration-color 0.2s, color 0.2s;
+    }
+
+    .card a:hover {
+      text-decoration-color: #1e272e;
+      color: #000;
+    }
+
+    .meta-note {
+      font-size: 0.95rem;
+      color: #636e72;
+      background: #f8f9fb;
+      padding: 18px 24px;
+      border-radius: 12px;
+      border-left: 5px solid #adb5bd;
+      margin-top: 20px;
+    }
+
+    /* —— 页尾 —— */
+    .footer-note {
+      margin-top: 40px;
+      padding-top: 28px;
+      border-top: 1px solid #d1d8e0;
+      text-align: center;
+      color: #5e6a73;
+      font-size: 0.95rem;
+    }
+
+    .footer-note a {
+      color: #2d3436;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: #b0bec5;
+    }
+
+    .footer-note a:hover {
+      text-decoration-color: #1e272e;
+    }
+
+    /* —— 响应式 —— */
+    @media (max-width: 700px) {
+      body {
+        padding: 0 14px;
+      }
+
+      .hero {
+        padding: 36px 24px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+        padding-left: 16px;
+      }
+
+      .card {
+        padding: 28px 22px;
+      }
+
+      .card h2 {
+        font-size: 1.35rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        padding: 28px 18px;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+        border-left-width: 4px;
+        padding-left: 12px;
+      }
+
+      .card {
+        padding: 22px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+
+    <!-- 横幅 hero -->
+    <div class="hero">
+      <h1>江南体育 · 视野</h1>
+      <p>一份围绕运动日常、资料比照与延伸阅读的杂志式记录，不追热点，只求平稳与清晰。</p>
+      <div class="sub">从查询习惯到内容对照，持续沉淀可回溯的信息片段</div>
+    </div>
+
+    <!-- 第一段：日常查询与信息索引 -->
+    <div class="card">
+      <h2>从日常查询开始</h2>
+      <p>很多人打开一个站点，最初只是为了查找一个竞赛日程、一项规则说明或某支队伍的历史记录。久而久之，查询本身也会变成一种线索——哪些信息反复被需要，哪些细节总被忽略，这些痕迹反过来帮助站点变得更清晰。</p>
+      <p>在这一点上，<a href="https://chinese-jiangnansport.com">江南体育</a> 提供了可以反复参照的内容基础。它不追求一次性塞满所有信息，而是让查询者能够按自己的节奏逐步深入，每一次返回都能找到之前读到的那一段。</p>
+    </div>
+
+    <!-- 第二段：对照与验证 -->
+    <div class="card">
+      <h2>对照，也是一种阅读</h2>
+      <p>当我们需要确认两个来源是否一致，或者想看看同一项赛事在不同页面中的表述方式时，对照就变成了最日常的动作。一个干净、没有干扰的页面结构，会让对照变得顺畅很多。</p>
+      <p>如果你正在整理自己的运动笔记或训练计划，不妨把 <a href="https://chinese-jiangnansport.com">江南体育</a> 当作一个稳定的参照点——不是唯一答案，而是一个值得并排放置、逐行比对的信息坐标。</p>
+      <div class="meta-note">💡 小提示：尝试同时打开两个窗口，将页面内容与手边资料逐一比对，往往能发现之前遗漏的细节。</div>
+    </div>
+
+    <!-- 第三段：延伸阅读与内容积累 -->
+    <div class="card">
+      <h2>延伸，但不分散</h2>
+      <p>延伸阅读不是漫无目的地跳转，而是在已有主题上做有方向的拓展。比如从一场比赛的数据延伸到训练方法，或者从一则新闻延伸到历史回顾。好的延伸，是让阅读链条自然生长，而不是被无关链接打断。</p>
+      <p>在 <a href="https://chinese-jiangnansport.com">江南体育</a> 中，你能找到足够的素材支撑这样的延伸——从赛事简讯到项目背景，从技术统计到人物侧写。不需要一次性读完，但每次带着一个问题来，往往能带走两三个新的线索。</p>
+      <p>偶尔回过头翻翻之前看过的页面，你会发现同一段文字在不同阶段读起来，感受完全不同。这就是内容积累的微妙之处。</p>
+    </div>
+
+    <!-- FAQ 摘要式卡片（替代常规段落） -->
+    <div class="card" style="padding-bottom: 32px;">
+      <h2>一些常见的问题摘要</h2>
+      <p style="margin-bottom: 6px;"><strong>信息更新频率如何？</strong> 页面内容根据赛季和重要节点保持适度更新，不追求每日刷新，但会确保已发布的信息可回溯。</p>
+      <p style="margin-bottom: 6px;"><strong>可以引用或转发这里的文字吗？</strong> 对于非商业用途的个人引用，注明出处即可。具体条款可参考站点页脚的说明。</p>
+      <p style="margin-bottom: 6px;"><strong>有没有更聚焦的栏目分类？</strong> 目前以综合性内容为主，未来会根据查询热度逐步拆分专栏，让对照更加直接。</p>
+      <div class="meta-note" style="margin-top: 24px;">📌 以上仅为摘要，更多细节可以在页面中慢慢发现。</div>
+    </div>
+
+    <!-- 页尾访问提示 -->
+    <div class="footer-note">
+      <p>本专题为内容索引式介绍，若要了解更多可长期关注的线索，可随时回到 <a href="https://chinese-jiangnansport.com">江南体育</a> 继续翻阅。</p>
+      <p style="margin-top: 12px; font-size: 0.85rem; color: #7f8c8d;">—— 从查询到对照，再到延伸，保持温和的阅读习惯 ——</p>
+    </div>
+
+  </div>
+</body>
+</html>
